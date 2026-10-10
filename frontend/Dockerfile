@@ -1,4 +1,4 @@
-# ---------- Stage 1: Build React application ----------
+# Build React
 
 FROM node:22-alpine AS builder
 
@@ -13,7 +13,7 @@ COPY . .
 RUN npm run build
 
 
-# ---------- Stage 2: Apache ----------
+# Apache Server
 
 FROM httpd:2.4-alpine
 
